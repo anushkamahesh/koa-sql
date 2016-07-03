@@ -1,15 +1,18 @@
 import Koa from 'koa'
+import logger  from 'koa-logger';
+
 const app = new Koa()
 
-// response
-app.use(async (ctx) => {
-  ctx.body = 'Hello World'
-})
+const env = process.env.NODE_ENV || 'development';
 
-// var app = api({
-//   ratelimit: ~~program.ratelimit,
-//   duration: ~~program.ratelimitDuration
-// });
-app.listen(3000, () => console.log('server started 3000'))
+if ('production' != env) app.use(logger());
+
+// response
+app.use(async (ctx, next) => {
+	ctx.body = 'Hello World'
+})
+let port = process.env.PORT || 3000;
+
+app.listen(port, () => console.log('Server started ' + port));
 
 export default app

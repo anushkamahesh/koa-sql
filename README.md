@@ -1,17 +1,4 @@
-# koa2-boilerplate
-
-A minimal boilerplate of [koa v2](https://github.com/koajs/koa/issues/533).
-
-[![NPM Version][npm-image]][npm-url]
-[![NPM Downloads][downloads-image]][downloads-url]
-
-## Installation
-
-Both ways you can start:
-
-    fork this repo & git clone the repo
-    npm install koa2-boilerplate
-
+# koa2-boilerplate with sql
 
 ## Command
 
@@ -43,19 +30,6 @@ Both ways you can start:
 - *Lint*:
     You can choose the lint tool that you prefer.
 
-## Reference
-
-- [koajs/koa#533](https://github.com/koajs/koa/issues/533)
-- [koajs/koa#596](https://github.com/koajs/koa/issues/596)
-
-
 ## License
 
 MIT &copy; [GeekPlux](https://github.com/geekplux)
-
-
-
-[npm-image]: https://img.shields.io/npm/v/koa2-boilerplate.svg
-[npm-url]: https://npmjs.org/package/koa2-boilerplate
-[downloads-image]: https://img.shields.io/npm/dm/koa2-boilerplate.svg
-[downloads-url]: https://npmjs.org/package/koa2-boilerplate
