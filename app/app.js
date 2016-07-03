@@ -6,6 +6,10 @@ app.use(async (ctx) => {
   ctx.body = 'Hello World'
 })
 
+// var app = api({
+//   ratelimit: ~~program.ratelimit,
+//   duration: ~~program.ratelimitDuration
+// });
 app.listen(3000, () => console.log('server started 3000'))
 
 export default app
